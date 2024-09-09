@@ -66,7 +66,7 @@
             margin-top: -20px; /* Adjust to position image slightly higher */
         }
         .profile-image {
-            width: 220px; 
+            width: 220px;
             height: 300px;
             object-fit: cover;
             border-radius: 8px;
@@ -153,6 +153,60 @@
         }
         .animated {
             animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .profile-info {
+                max-width: 100%;
+                padding-right: 0;
+            }
+            .profile-info h1 {
+                font-size: 2rem;
+            }
+            .profile-info h2 {
+                font-size: 1.25rem;
+            }
+            .profile-info p {
+                font-size: 1rem;
+            }
+            .profile-image-container {
+                max-width: 100%;
+                margin-top: 20px;
+            }
+            .profile-image {
+                width: 180px;
+                height: 240px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .profile-info h1 {
+                font-size: 1.75rem;
+            }
+            .profile-info h2 {
+                font-size: 1.1rem;
+            }
+            .profile-info p {
+                font-size: 0.9rem;
+            }
+            .profile-image {
+                width: 150px;
+                height: 200px;
+            }
+            .content-section h3 {
+                font-size: 1.5rem;
+            }
+            .work-list a {
+                font-size: 1rem;
+            }
+            footer p {
+                font-size: 0.8rem;
+            }
         }
     </style>
 </head>
